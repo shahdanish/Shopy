@@ -1,0 +1,4 @@
+module gRPC_CXX_Wrapper {
+umbrella "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/grpc-binary/gRPC-CXX-Wrapper/include"
+export *
+}

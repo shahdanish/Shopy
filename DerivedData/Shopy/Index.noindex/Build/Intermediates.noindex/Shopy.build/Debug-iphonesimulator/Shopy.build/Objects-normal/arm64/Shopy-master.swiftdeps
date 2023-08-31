@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)"
+options: "6ea485d2c4abc8d025c4e517a34d13c866df9f555e1ca53fcbe7de6b96b32816"
+build_start_time: [1693480989, 379445000]
+build_end_time: [1693480989, 609915000]
+inputs:
+  "/Users/danishfarhaj/xcodelearning/Shopy/Shopy/ContentView.swift": [1693474197, 116150958]
+  "/Users/danishfarhaj/xcodelearning/Shopy/Shopy/ShopyApp.swift": [1693396106, 150953958]
+  "/Users/danishfarhaj/xcodelearning/Shopy/Shopy/Signup.swift": [1693480985, 134998583]

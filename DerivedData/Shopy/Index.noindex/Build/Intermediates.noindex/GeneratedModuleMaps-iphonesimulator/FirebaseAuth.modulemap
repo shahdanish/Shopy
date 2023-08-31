@@ -1,0 +1,4 @@
+module FirebaseAuth {
+umbrella header "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseAuth/Sources/Public/FirebaseAuth/FirebaseAuth.h"
+export *
+}

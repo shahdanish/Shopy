@@ -1,0 +1,19 @@
+version: "Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)"
+options: "ff3866e432c48e68f6b764e903da1d885b852ed364e1ae7fc704a4c5175bc84c"
+build_start_time: [1693480985, 855100000]
+build_end_time: [1693480986, 208309000]
+inputs:
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseCombineSwift/Sources/Auth/Auth+Combine.swift"
+  : [1693392323, 171883708]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseCombineSwift/Sources/Auth/GameCenterAuthProvider+Combine.swift"
+  : [1693392323, 171983708]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseCombineSwift/Sources/Auth/MultiFactor+Combine.swift"
+  : [1693392323, 172042499]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseCombineSwift/Sources/Auth/MultiFactorResolver+Combine.swift"
+  : [1693392323, 172110999]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseCombineSwift/Sources/Auth/OAuthProvider+Combine.swift"
+  : [1693392323, 172236083]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseCombineSwift/Sources/Auth/PhoneAuthProvider+Combine.swift"
+  : [1693392323, 172295499]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseCombineSwift/Sources/Auth/User+Combine.swift"
+  : [1693392323, 172387833]

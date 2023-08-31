@@ -1,0 +1,4 @@
+module nanopb {
+umbrella "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/nanopb/spm_headers"
+export *
+}

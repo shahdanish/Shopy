@@ -1,0 +1,39 @@
+version: "Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)"
+options: "dcd5f8ff4b3eed19b7388cc841da49c5c17a65e14261c17969eefa449c0990fa"
+build_start_time: [1693480992, 991734000]
+build_end_time: [1693480993, 200570000]
+inputs:
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/swift-protobuf/Sources/SwiftProtobufPluginLibrary/Array+Extensions.swift"
+  : [1693392327, 324258999]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/swift-protobuf/Sources/SwiftProtobufPluginLibrary/CodePrinter.swift"
+  : [1693392327, 324423291]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/swift-protobuf/Sources/SwiftProtobufPluginLibrary/Descriptor+Extensions.swift"
+  : [1693392327, 324511458]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/swift-protobuf/Sources/SwiftProtobufPluginLibrary/Descriptor.swift"
+  : [1693392327, 324772583]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/swift-protobuf/Sources/SwiftProtobufPluginLibrary/FieldNumbers.swift"
+  : [1693392327, 324870791]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/swift-protobuf/Sources/SwiftProtobufPluginLibrary/Google_Protobuf_Compiler_CodeGeneratorResponse+Extensions.swift"
+  : [1693392327, 324948541]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/swift-protobuf/Sources/SwiftProtobufPluginLibrary/Google_Protobuf_SourceCodeInfo+Extensions.swift"
+  : [1693392327, 325040541]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/swift-protobuf/Sources/SwiftProtobufPluginLibrary/NamingUtils.swift"
+  : [1693392327, 325176416]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/swift-protobuf/Sources/SwiftProtobufPluginLibrary/ProtoFileToModuleMappings.swift"
+  : [1693392327, 325288541]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/swift-protobuf/Sources/SwiftProtobufPluginLibrary/ProvidesLocationPath.swift"
+  : [1693392327, 325362749]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/swift-protobuf/Sources/SwiftProtobufPluginLibrary/ProvidesSourceCodeLocation.swift"
+  : [1693392327, 325434041]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/swift-protobuf/Sources/SwiftProtobufPluginLibrary/SwiftLanguage.swift"
+  : [1693392327, 325566083]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/swift-protobuf/Sources/SwiftProtobufPluginLibrary/SwiftProtobufInfo.swift"
+  : [1693392327, 325637791]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/swift-protobuf/Sources/SwiftProtobufPluginLibrary/SwiftProtobufNamer.swift"
+  : [1693392327, 325755208]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/swift-protobuf/Sources/SwiftProtobufPluginLibrary/UnicodeScalar+Extensions.swift"
+  : [1693392327, 325824749]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/swift-protobuf/Sources/SwiftProtobufPluginLibrary/plugin.pb.swift"
+  : [1693392327, 325888624]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/swift-protobuf/Sources/SwiftProtobufPluginLibrary/swift_protobuf_module_mappings.pb.swift"
+  : [1693392327, 325963166]

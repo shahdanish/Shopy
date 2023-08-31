@@ -1,0 +1,13 @@
+version: "Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)"
+options: "159c4f8bab79dc533e4d71ffcea6b403b82bee420e8a67d9fa0c620a061cfa30"
+build_start_time: [1693480985, 863731000]
+build_end_time: [1693480986, 172258000]
+inputs:
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseDatabaseSwift/Sources/Codable/DataSnapshot+ReadDecodable.swift"
+  : [1693392323, 210947374]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseDatabaseSwift/Sources/Codable/DatabaseReference+WriteEncodable.swift"
+  : [1693392323, 211031833]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseDatabaseSwift/Sources/Codable/EncoderDecoder.swift"
+  : [1693392323, 211091916]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseDatabaseSwift/Sources/Codable/ServerTimestamp.swift"
+  : [1693392323, 211174416]

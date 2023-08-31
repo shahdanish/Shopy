@@ -1,0 +1,43 @@
+version: "Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)"
+options: "e75d0d65f5bf3ae038e2d3b2edd6d56b2748602cd2204a6599b14168e050e97d"
+build_start_time: [1693480983, 906415000]
+build_end_time: [1693480985, 308251000]
+inputs:
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/promises/Sources/Promises/Promise+All.swift"
+  : [1693392327, 829243624]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/promises/Sources/Promises/Promise+Always.swift"
+  : [1693392327, 829394083]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/promises/Sources/Promises/Promise+Any.swift"
+  : [1693392327, 829492124]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/promises/Sources/Promises/Promise+Async.swift"
+  : [1693392327, 829586916]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/promises/Sources/Promises/Promise+Await.swift"
+  : [1693392327, 829685666]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/promises/Sources/Promises/Promise+Catch.swift"
+  : [1693392327, 829779708]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/promises/Sources/Promises/Promise+Delay.swift"
+  : [1693392327, 829856249]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/promises/Sources/Promises/Promise+Do.swift"
+  : [1693392327, 829941208]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/promises/Sources/Promises/Promise+Race.swift"
+  : [1693392327, 830027624]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/promises/Sources/Promises/Promise+Recover.swift"
+  : [1693392327, 830105041]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/promises/Sources/Promises/Promise+Reduce.swift"
+  : [1693392327, 830180916]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/promises/Sources/Promises/Promise+Retry.swift"
+  : [1693392327, 830264249]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/promises/Sources/Promises/Promise+Testing.swift"
+  : [1693392327, 830356666]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/promises/Sources/Promises/Promise+Then.swift"
+  : [1693392327, 830418874]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/promises/Sources/Promises/Promise+Timeout.swift"
+  : [1693392327, 830482666]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/promises/Sources/Promises/Promise+Validate.swift"
+  : [1693392327, 830556458]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/promises/Sources/Promises/Promise+Wrap.swift"
+  : [1693392327, 830638624]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/promises/Sources/Promises/Promise.swift"
+  : [1693392327, 830731458]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/promises/Sources/Promises/PromiseError.swift"
+  : [1693392327, 830809874]

@@ -1,0 +1,9 @@
+version: "Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)"
+options: "7fa5c6cbb3ed1cee6f1167919b7d98fbfbb227920e04abf4164029103007abe8"
+build_start_time: [1693480986, 402004000]
+build_end_time: [1693480988, 56843000]
+inputs:
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseInAppMessaging/Swift/Source/CustomInAppMessageDisplayViewModifier.swift"
+  : [1693392323, 228510666]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseInAppMessaging/Swift/Source/SwiftUIPreviewHelpers.swift"
+  : [1693392323, 228589333]

@@ -1,0 +1,31 @@
+version: "Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)"
+options: "0fd7bbf0b8c29a81cdc1d15f6cbe91992955391d46ebe88e8f489d748e843c98"
+build_start_time: [1693480985, 777344000]
+build_end_time: [1693480987, 227882000]
+inputs:
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseMLModelDownloader/Sources/CustomModel.swift"
+  : [1693392323, 244881416]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseMLModelDownloader/Sources/DeviceLogger.swift"
+  : [1693392323, 244952499]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseMLModelDownloader/Sources/DownloaderUserDefaults.swift"
+  : [1693392323, 245004333]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseMLModelDownloader/Sources/FileDownloader.swift"
+  : [1693392323, 245076958]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseMLModelDownloader/Sources/LocalModelInfo.swift"
+  : [1693392323, 245156999]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseMLModelDownloader/Sources/ModelDownloadConditions.swift"
+  : [1693392323, 245226333]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseMLModelDownloader/Sources/ModelDownloadTask.swift"
+  : [1693392323, 245343958]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseMLModelDownloader/Sources/ModelDownloader.swift"
+  : [1693392323, 245452499]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseMLModelDownloader/Sources/ModelFileManager.swift"
+  : [1693392323, 245547041]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseMLModelDownloader/Sources/ModelInfoRetriever.swift"
+  : [1693392323, 245682083]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseMLModelDownloader/Sources/RemoteModelInfo.swift"
+  : [1693392323, 245755083]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseMLModelDownloader/Sources/TelemetryLogger.swift"
+  : [1693392323, 245844791]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseMLModelDownloader/Sources/proto/firebase_ml_log_sdk.pb.swift"
+  : [1693392323, 246027999]

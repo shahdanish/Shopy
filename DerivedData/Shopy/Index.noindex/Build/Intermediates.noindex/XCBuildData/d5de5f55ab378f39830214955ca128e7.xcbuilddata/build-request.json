@@ -1,0 +1,58 @@
+{
+  "buildCommand" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : true,
+    "targets" : null
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "69cf7c277bcd661bd5f26f2c1c8621ca7a9435a0fcc50bd61950f16bc56604f9"
+    }
+  ],
+  "containerPath" : "/Users/danishfarhaj/xcodelearning/Shopy/Shopy.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "indexbuild",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphonesimulator",
+      "sdk" : "iphonesimulator16.4",
+      "sdkVariant" : "iphonesimulator",
+      "supportedArchitectures" : [
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/danishfarhaj/xcodelearning/Shopy/DerivedData/Shopy/Index.noindex/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/danishfarhaj/xcodelearning/Shopy/DerivedData/Shopy/Index.noindex/Build/Products",
+      "derivedDataPath" : "/Users/danishfarhaj/xcodelearning/Shopy/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/danishfarhaj/xcodelearning/Shopy/DerivedData/Shopy/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/danishfarhaj/xcodelearning/Shopy/DerivedData/Shopy/Index.noindex/PrecompiledHeaders",
+      "indexRegularBuildIntermediatesPath" : "/Users/danishfarhaj/xcodelearning/Shopy/DerivedData/Shopy/Build/Intermediates.noindex",
+      "indexRegularBuildProductsPath" : "/Users/danishfarhaj/xcodelearning/Shopy/DerivedData/Shopy/Build/Products",
+      "pchPath" : "/Users/danishfarhaj/xcodelearning/Shopy/DerivedData/Shopy/Index.noindex/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "qos" : "default",
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

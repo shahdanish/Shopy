@@ -1,0 +1,9 @@
+version: "Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)"
+options: "0e6851dd07c0fd6a70bc7f5f30df02bdea6586edcf1250ecca0fb044aafcd7f5"
+build_start_time: [1693480987, 607908000]
+build_end_time: [1693480987, 739389000]
+inputs:
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseCombineSwift/Sources/Storage/Storage+Combine.swift"
+  : [1693392323, 173296083]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseCombineSwift/Sources/Storage/StorageReference+Combine.swift"
+  : [1693392323, 173387374]

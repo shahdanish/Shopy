@@ -1,0 +1,9 @@
+version: "Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)"
+options: "b5e44be53cc21cd75170224d90f62f2e531bef8ac08421cbaf0c91beaa37fe77"
+build_start_time: [1693480987, 797219000]
+build_end_time: [1693480987, 902881000]
+inputs:
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseCombineSwift/Sources/Functions/Functions+Combine.swift"
+  : [1693392323, 173109624]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseCombineSwift/Sources/Functions/HTTPSCallable+Combine.swift"
+  : [1693392323, 173193916]

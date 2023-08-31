@@ -1,0 +1,7 @@
+version: "Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)"
+options: "e3472d0ab8737e1ba0c0eb0edd60877377d1248a740d60464eeacd3bc3ccae52"
+build_start_time: [1693480986, 362979000]
+build_end_time: [1693480987, 745337000]
+inputs:
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseAnalyticsSwift/Sources/Analytics+SwiftUI.swift"
+  : [1693392323, 112951999]

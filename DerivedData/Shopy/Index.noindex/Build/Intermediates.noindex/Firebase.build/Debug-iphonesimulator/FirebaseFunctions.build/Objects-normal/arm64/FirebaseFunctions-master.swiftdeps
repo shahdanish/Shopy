@@ -1,0 +1,21 @@
+version: "Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)"
+options: "fd80fa6887155aedbd851925e01bfb8f53bae7452bb4ee404bcc427d66ce81ac"
+build_start_time: [1693480985, 753805000]
+build_end_time: [1693480987, 693459000]
+inputs:
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseFunctions/Sources/Callable+Codable.swift"
+  : [1693392323, 217936749]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseFunctions/Sources/Functions.swift"
+  : [1693392323, 218067124]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseFunctions/Sources/FunctionsError.swift"
+  : [1693392323, 218157541]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseFunctions/Sources/HTTPSCallable.swift"
+  : [1693392323, 218237416]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseFunctions/Sources/HTTPSCallableOptions.swift"
+  : [1693392323, 218291708]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseFunctions/Sources/Internal/FunctionsComponent.swift"
+  : [1693392323, 218397833]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseFunctions/Sources/Internal/FunctionsContext.swift"
+  : [1693392323, 218472166]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseFunctions/Sources/Internal/FunctionsSerializer.swift"
+  : [1693392323, 218572374]

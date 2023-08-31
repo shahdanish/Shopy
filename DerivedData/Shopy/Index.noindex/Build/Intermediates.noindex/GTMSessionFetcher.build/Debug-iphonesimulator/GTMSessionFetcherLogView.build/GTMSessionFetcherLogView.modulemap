@@ -1,0 +1,4 @@
+module GTMSessionFetcherLogView {
+umbrella "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/gtm-session-fetcher/Sources/LogView/Public"
+export *
+}

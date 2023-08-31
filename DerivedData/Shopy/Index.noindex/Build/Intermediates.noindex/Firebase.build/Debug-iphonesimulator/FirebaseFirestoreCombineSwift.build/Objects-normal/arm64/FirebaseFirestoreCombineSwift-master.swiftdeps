@@ -1,0 +1,17 @@
+version: "Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)"
+options: "cbeff692bd4f2cbc97f4e53641b70ac7d50fb583dc40a5cc8792eef0883e46b2"
+build_start_time: [1693480988, 22682000]
+build_end_time: [1693480988, 167032000]
+inputs:
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseCombineSwift/Sources/Firestore/CollectionReference+Combine.swift"
+  : [1693392323, 172644166]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseCombineSwift/Sources/Firestore/DocumentReference+Combine.swift"
+  : [1693392323, 172704916]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseCombineSwift/Sources/Firestore/Firestore+Combine.swift"
+  : [1693392323, 172787999]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseCombineSwift/Sources/Firestore/Query+Combine.swift"
+  : [1693392323, 172862708]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseCombineSwift/Sources/Firestore/Transaction+Combine.swift"
+  : [1693392323, 172938041]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseCombineSwift/Sources/Firestore/WriteBatch+Combine.swift"
+  : [1693392323, 173011583]

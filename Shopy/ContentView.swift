@@ -1,68 +1,48 @@
 import SwiftUI
+import Firebase
 
 struct ContentView: View {
-    @State private var username = ""
-    @State private var password = ""
-    @State private var retypePassword = ""
     @State private var email = ""
-    @State private var agreedToTerms = false
-    
+    @State private var password = ""
+
     var body: some View {
-        NavigationView {
-            VStack(spacing: 20) {
-                Image(systemName: "person.fill")
-                    .resizable()
-                    .foregroundColor(.accentColor)
-                    .frame(width: 100, height: 100)
-                
-                TextField("Username", text: $username)
+        VStack {
+            Image("your_logo_image")
+                .resizable()
+                .frame(width: 100, height: 100)
+                .padding(.bottom, 30)
+            
+            TextField("Email", text: $email)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding()
+            
+            SecureField("Password", text: $password)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .padding()
+            
+            Button(action: signUpButtonTapped) {
+                Text("Sign Up")
+                    .foregroundColor(.white)
                     .padding()
-                    .background(Color.gray.opacity(0.2))
-                    .cornerRadius(8)
-                
-                SecureField("Password", text: $password)
-                    .padding()
-                    .background(Color.gray.opacity(0.2))
-                    .cornerRadius(8)
-                
-                SecureField("Retype Password", text: $retypePassword)
-                    .padding()
-                    .background(Color.gray.opacity(0.2))
-                    .cornerRadius(8)
-                
-                TextField("Email Address", text: $email)
-                    .padding()
-                    .background(Color.gray.opacity(0.2))
-                    .cornerRadius(8)
-                
-                Toggle(isOn: $agreedToTerms) {
-                    Text("Agree to terms")
-                }
-                
-                Button(action: {
-                    // Handle sign up action
-                    FirebaseAuthService.signUp(username: username, pass : password, email: email, agreedToTerms: agreedToTerms) { result in
-                            switch result {
-                            case .success(let documentID):
-                                print("Document added with ID: \(documentID)")
-                                // Perform any navigation or success action here
-                            case .failure(let error):
-                                print("Error adding document: \(error)")
-                                // Handle the error, e.g., show an alert to the user
-                            }
-                        }
-                }) {
-                    Text("Sign Up")
-                        .foregroundColor(.white)
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(Color.blue)
-                        .cornerRadius(8)
-                        .multilineTextAlignment(.center)
-                }
-                .disabled(!agreedToTerms)
+                    .frame(maxWidth: .infinity)
+                    .background(Color.blue)
+                    .cornerRadius(10)
             }
             .padding()
+        }
+        .padding()
+    }
+    
+    func signUpButtonTapped() {
+        Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
+            if let error = error {
+                print("Error creating user: \(error.localizedDescription)")
+                // Show an alert with the error message
+            } else {
+                print("User created successfully")
+                // Show an alert for successful registration
+                // You can also navigate to another screen here
+            }
         }
     }
 }
@@ -72,3 +52,4 @@ struct ContentView_Previews: PreviewProvider {
         ContentView()
     }
 }
+

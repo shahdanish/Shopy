@@ -1,0 +1,4 @@
+module GoogleUtilities_ISASwizzler {
+umbrella "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/GoogleUtilities/GoogleUtilities/ISASwizzler/Public"
+export *
+}

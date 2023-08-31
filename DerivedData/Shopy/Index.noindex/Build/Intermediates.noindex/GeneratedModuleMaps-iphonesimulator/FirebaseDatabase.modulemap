@@ -1,0 +1,4 @@
+module FirebaseDatabase {
+umbrella header "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseDatabase/Sources/Public/FirebaseDatabase/FirebaseDatabase.h"
+export *
+}

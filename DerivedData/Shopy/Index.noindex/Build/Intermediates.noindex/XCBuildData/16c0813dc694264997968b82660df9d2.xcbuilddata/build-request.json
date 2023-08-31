@@ -1,0 +1,256 @@
+{
+  "buildCommand" : {
+    "command" : "prepareForIndexing",
+    "enableIndexBuildArena" : true,
+    "targets" : null
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "PACKAGE-PRODUCT:GoogleAppMeasurement"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:GoogleAppMeasurementOnDeviceConversion"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:GoogleAppMeasurementWithoutAdIdSupport"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:leveldb"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:RecaptchaInterop"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:FBLPromisesTestHelpers"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:PromisesTestHelpers"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:FBLPromises"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:FBLPromisesTestHelpers"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:Promises"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:PromisesTestHelpers"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:GTMSessionFetcherFull"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:GTMSessionFetcherLogView"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:GTMSessionFetcher"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:GTMSessionFetcherCore"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:GTMSessionFetcherFull"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:GTMSessionFetcherLogView"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:FirebaseAnalytics"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:FirebaseAnalyticsOnDeviceConversion"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:FirebaseAnalyticsSwift"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:FirebaseAnalyticsWithoutAdIdSupport"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:FirebaseAppCheck"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:FirebaseAppDistribution-Beta"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:FirebaseAuth"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:FirebaseAuthCombine-Community"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:FirebaseCrashlytics"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:FirebaseDatabase"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:FirebaseDatabaseSwift"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:FirebaseDynamicLinks"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:FirebaseFirestore"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:FirebaseFirestoreCombine-Community"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:FirebaseFirestoreSwift"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:FirebaseFunctions"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:FirebaseFunctionsCombine-Community"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:FirebaseInAppMessaging-Beta"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:FirebaseInAppMessagingSwift-Beta"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:FirebaseInstallations"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:FirebaseMLModelDownloader"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:FirebaseMessaging"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:FirebasePerformance"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:FirebaseRemoteConfig"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:FirebaseRemoteConfigSwift"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:FirebaseStorage"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:FirebaseStorageCombine-Community"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:GoogleUtilities-SwizzlerTestHelpers"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:GULAppDelegateSwizzler"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:GULEnvironment"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:GULISASwizzler"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:GULLogger"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:GULMethodSwizzler"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:GULNSData"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:GULNetwork"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:GULReachability"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:GULSwizzlerTestHelpers"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:GULUserDefaults"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:gRPC-C++"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:gRPC-Core"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:nanopb"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:GoogleDataTransport"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:SwiftProtobufPluginLibrary"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:protoc-gen-swift-6C69A13E691DF668-testable"
+    },
+    {
+      "guid" : "PACKAGE-TARGET:SwiftProtobufPlugin"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:SwiftProtobuf"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:SwiftProtobufPlugin"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:SwiftProtobufPluginLibrary"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:protoc-gen-swift"
+    },
+    {
+      "guid" : "PACKAGE-PRODUCT:abseil"
+    }
+  ],
+  "containerPath" : "/Users/danishfarhaj/xcodelearning/Shopy/Shopy.xcodeproj",
+  "continueBuildingAfterErrors" : true,
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "indexbuild",
+    "activeArchitecture" : "arm64",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : false,
+      "platform" : "iphonesimulator",
+      "sdk" : "iphonesimulator16.4",
+      "sdkVariant" : "iphonesimulator",
+      "supportedArchitectures" : [
+        "arm64",
+        "x86_64"
+      ],
+      "targetArchitecture" : "arm64"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/danishfarhaj/xcodelearning/Shopy/DerivedData/Shopy/Index.noindex/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/danishfarhaj/xcodelearning/Shopy/DerivedData/Shopy/Index.noindex/Build/Products",
+      "derivedDataPath" : "/Users/danishfarhaj/xcodelearning/Shopy/DerivedData",
+      "indexDataStoreFolderPath" : "/Users/danishfarhaj/xcodelearning/Shopy/DerivedData/Shopy/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/danishfarhaj/xcodelearning/Shopy/DerivedData/Shopy/Index.noindex/PrecompiledHeaders",
+      "indexRegularBuildIntermediatesPath" : "/Users/danishfarhaj/xcodelearning/Shopy/DerivedData/Shopy/Build/Intermediates.noindex",
+      "indexRegularBuildProductsPath" : "/Users/danishfarhaj/xcodelearning/Shopy/DerivedData/Shopy/Build/Products",
+      "pchPath" : "/Users/danishfarhaj/xcodelearning/Shopy/DerivedData/Shopy/Index.noindex/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Debug",
+    "overrides" : {
+      "synthesized" : {
+        "table" : {
+          "ENABLE_PREVIEWS" : "NO",
+          "ONLY_ACTIVE_ARCH" : "YES"
+        }
+      }
+    }
+  },
+  "qos" : "utility",
+  "schemeCommand" : "launch",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

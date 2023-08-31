@@ -1,0 +1,15 @@
+version: "Apple Swift version 5.8.1 (swiftlang-5.8.0.124.5 clang-1403.0.22.11.100)"
+options: "a5ce83c6792fdd99c56835a86868861e30b1a55bff8028a604ae8ef25a09c475"
+build_start_time: [1693480985, 901885000]
+build_end_time: [1693480987, 713673000]
+inputs:
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseRemoteConfigSwift/Sources/Codable.swift"
+  : [1693392323, 304319999]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseRemoteConfigSwift/Sources/FirebaseRemoteConfigValueDecoderHelper.swift"
+  : [1693392323, 304378041]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseRemoteConfigSwift/Sources/PropertyWrapper/RemoteConfigProperty.swift"
+  : [1693392323, 304456166]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseRemoteConfigSwift/Sources/PropertyWrapper/RemoteConfigValueObservable.swift"
+  : [1693392323, 304521166]
+  ? "/Users/danishfarhaj/Library/Developer/Xcode/DerivedData/Shopy-fxurryqgwmfusiabtogwxoqhlusg/SourcePackages/checkouts/firebase-ios-sdk/FirebaseRemoteConfigSwift/Sources/Value.swift"
+  : [1693392323, 304575708]
