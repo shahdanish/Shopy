@@ -7,7 +7,7 @@ struct SignInView: View {
 
     var body: some View {
         VStack {
-            Image("your_logo_image")
+            Image("Logo.png")
                 .resizable()
                 .frame(width: 100, height: 100)
                 .padding(.bottom, 30)
