@@ -7,129 +7,81 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "9D726D8B-43FB-4DD6-9957-8843AB980209"
+            uuid = "5F7A00AB-7ACB-4CFC-8D88-CFECED96C5EA"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Shopy/SignUpView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "65075758-D595-408B-ADEE-52BC00899400"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Shopy/Signup.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "7"
-            endingLineNumber = "7"
-            landmarkName = "signUp(username:pass:email:agreedToTerms:completion:)"
+            startingLineNumber = "26"
+            endingLineNumber = "26"
+            landmarkName = "isValidEmail(_:)"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "9D726D8B-43FB-4DD6-9957-8843AB980209 - b220c7c7c70fdfac"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static Shopy.FirebaseAuthService.signUp(username: Swift.String, email: Swift.String, agreedToTerms: Swift.Bool, completion: (Swift.Result&lt;Swift.String, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Shopy"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/danishfarhaj/xcodelearning/Shopy/Shopy/Signup.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "7"
-                  endingLineNumber = "7"
-                  offsetFromSymbolStart = "148">
-               </Location>
-               <Location
-                  uuid = "9D726D8B-43FB-4DD6-9957-8843AB980209 - 7e2c6665a707a75"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static Shopy.FirebaseAuthService.signUp(username: Swift.String, pass: Swift.String, email: Swift.String, agreedToTerms: Swift.Bool, completion: (Swift.Result&lt;Swift.String, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Shopy"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/danishfarhaj/xcodelearning/Shopy/Shopy/Signup.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "7"
-                  endingLineNumber = "7"
-                  offsetFromSymbolStart = "176">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "1830262C-C680-4B84-86DA-FA09E5FF4F99"
+            uuid = "AA19AF58-154D-4C12-A48C-188B0572C9F3"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Shopy/Signup.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "12"
-            endingLineNumber = "12"
-            landmarkName = "signUp(username:pass:email:agreedToTerms:completion:)"
+            startingLineNumber = "33"
+            endingLineNumber = "33"
+            landmarkName = "isValidPassword(_:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "EDE2643C-957D-4883-8A72-1B3D4D1B7942"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Shopy/Signup.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "14"
-            endingLineNumber = "14"
-            landmarkName = "signUp(username:pass:email:agreedToTerms:completion:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "EDE2643C-957D-4883-8A72-1B3D4D1B7942 - 7e2c6665a707a8c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static Shopy.FirebaseAuthService.signUp(username: Swift.String, pass: Swift.String, email: Swift.String, agreedToTerms: Swift.Bool, completion: (Swift.Result&lt;Swift.String, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Shopy"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/danishfarhaj/xcodelearning/Shopy/Shopy/Signup.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "284">
-               </Location>
-               <Location
-                  uuid = "EDE2643C-957D-4883-8A72-1B3D4D1B7942 - 7e2c6665a707a8c"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "static Shopy.FirebaseAuthService.signUp(username: Swift.String, pass: Swift.String, email: Swift.String, agreedToTerms: Swift.Bool, completion: (Swift.Result&lt;Swift.String, Swift.Error&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Shopy"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/danishfarhaj/xcodelearning/Shopy/Shopy/Signup.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "14"
-                  endingLineNumber = "14"
-                  offsetFromSymbolStart = "320">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "313F32ED-0B52-4731-B5B3-C6EAB18FB759"
+            uuid = "540930AA-1ED1-487E-B032-6786990B0E48"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "Shopy/Signup.swift"
+            filePath = "Shopy/SignUpView.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "15"
-            endingLineNumber = "15"
-            landmarkName = "signUp(username:pass:email:agreedToTerms:completion:)"
-            landmarkType = "7">
+            startingLineNumber = "56"
+            endingLineNumber = "56"
+            landmarkName = "body"
+            landmarkType = "24">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "EDC52CC4-2B1A-4FB4-86E5-0D7E21C4E350"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Shopy/ToastView.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "body"
+            landmarkType = "24">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

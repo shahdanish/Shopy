@@ -4,6 +4,9 @@ import Firebase
 struct SignUpView: View {
     @State private var email = ""
     @State private var password = ""
+    @State private var showToast = false
+    @State private var toastMessage = ""
+    let authService = FirebaseAuthService()
 
     var body: some View {
         VStack {
@@ -20,7 +23,17 @@ struct SignUpView: View {
                 .textFieldStyle(RoundedBorderTextFieldStyle())
                 .padding()
             
-            Button(action: signUpButtonTapped) {
+            Button(action: {
+                authService.signUp(email: self.email, password: self.password) { success, message in
+                                    if success {
+                                        showToast(message: "User created successfully!", duration: 3)
+                                    } else {
+                                        //showToast = true
+                                        toastMessage = message ?? "An error occurred"
+                                        showToast(message: toastMessage, duration: 3)
+                                    }
+                                }
+            }) {
                 Text("Sign Up")
                     .foregroundColor(.white)
                     .padding()
@@ -29,22 +42,33 @@ struct SignUpView: View {
                     .cornerRadius(10)
             }
             .padding()
+            if showToast {
+                            Text(toastMessage)
+                                .padding()
+                                .background(Color.black)
+                                .foregroundColor(Color.white)
+                                .cornerRadius(10)
+                                .transition(.slide)
+                                .showToast(isShowing: $showToast, text: toastMessage, duration: 3)
+                        }
         }
         .padding()
+        //.showToast(isShowing: $showToast, text: toastMessage, duration: 3)
+        
+        
     }
-    
-    func signUpButtonTapped() {
-        Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
-            if let error = error {
-                print("Error creating user: \(error.localizedDescription)")
-                // Show an alert with the error message
-            } else {
-                print("User created successfully")
-                // Show an alert for successful registration
-                // You can also navigate to another screen here
+    private func showToast(message: String, duration: TimeInterval) {
+            toastMessage = message
+            showToast = true
+            
+            // Automatically hide the toast after the specified duration
+            DispatchQueue.main.asyncAfter(deadline: .now() + duration) {
+                withAnimation {
+                    showToast = false
+                }
             }
         }
-    }
+   
 }
 
 struct SignUpView_Previews: PreviewProvider {

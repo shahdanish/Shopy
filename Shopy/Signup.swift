@@ -1,36 +1,39 @@
 import Foundation
 import Firebase
 import FirebaseFirestore
+import SwiftUI
 
-struct FirebaseAuthService {
-    static func signUp(username: String, pass: String, email: String, agreedToTerms: Bool, completion: @escaping (Result<String, Error>) -> Void) {
-        guard agreedToTerms else {
-            completion(.failure(NSError(domain: "", code: 0, userInfo: [NSLocalizedDescriptionKey: "Please agree to the terms before signing up"])))
-            return
-        }
-        // Assuming you've already authenticated the user
-        let user = Auth.auth().currentUser
 
-        if let user = user {
-            let db = Firestore.firestore()
-            
-            // Construct a reference to the user's document
-            let userDocument = db.collection("Users").document(user.uid)
-            
-            userDocument.setData([
-                "username": username,
-                "email": email,
-                "agreetoterms": true,
-                "password": pass
-            ]) { error in
+class FirebaseAuthService {
+    
+    func signUp(email: String, password: String, completion: @escaping (Bool, String?) -> Void) {
+        // Validate email and password
+        if isValidEmail(email) && isValidPassword(password) {
+            Auth.auth().createUser(withEmail: email, password: password) { (authResult, error) in
                 if let error = error {
-                    print("Error adding document: \(error.localizedDescription)")
+                    completion(false, "Error creating user: \(error.localizedDescription)")
                 } else {
-                    print("Document added to Firestore")
-                    // Perform any navigation or success action here
+                    completion(true, "User created successfully")
                 }
             }
+        } else {
+            completion(false, "Please enter a valid email and password.")
         }
-
+    }
+    
+    // Validation functions
+    func isValidEmail(_ email: String) -> Bool {
+        let emailRegex = "[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,}"
+        let emailPredicate = NSPredicate(format: "SELF MATCHES %@", emailRegex)
+        return emailPredicate.evaluate(with: email)
+    }
+    
+    func isValidPassword(_ password: String) -> Bool {
+        // Password should have at least 8 characters and contain at least two of the following: uppercase letters, lowercase letters, numbers, and symbols.
+        let passwordRegex = "^(?=.*[A-Z])(?=.*[a-z])(?=.*\\d.*\\d)(?=.*[@#$%^&+=]).{8,}$"
+        let passwordPredicate = NSPredicate(format: "SELF MATCHES %@", passwordRegex)
+        return passwordPredicate.evaluate(with: password)
     }
 }
+
+

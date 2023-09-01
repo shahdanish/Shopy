@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		280443452AA108A700672E4C /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280443442AA108A700672E4C /* SignInView.swift */; };
 		280443472AA109DA00672E4C /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280443462AA109DA00672E4C /* SignUpView.swift */; };
+		280A924C2AA1EE0E00E73FC3 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280A924B2AA1EE0E00E73FC3 /* ToastView.swift */; };
 		280ABD242AA08D5A0041208E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 280ABD232AA08D5A0041208E /* GoogleService-Info.plist */; };
 		28792F0E2A9F4C1A00E0208A /* ShopyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28792F0D2A9F4C1A00E0208A /* ShopyApp.swift */; };
 		28792F102A9F4C1A00E0208A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28792F0F2A9F4C1A00E0208A /* ContentView.swift */; };
@@ -67,6 +68,7 @@
 /* Begin PBXFileReference section */
 		280443442AA108A700672E4C /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		280443462AA109DA00672E4C /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
+		280A924B2AA1EE0E00E73FC3 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
 		280ABD232AA08D5A0041208E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		28792F0A2A9F4C1A00E0208A /* Shopy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shopy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28792F0D2A9F4C1A00E0208A /* ShopyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopyApp.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 				280443462AA109DA00672E4C /* SignUpView.swift */,
 				28792F112A9F4C1B00E0208A /* Assets.xcassets */,
 				28792F132A9F4C1B00E0208A /* Preview Content */,
+				280A924B2AA1EE0E00E73FC3 /* ToastView.swift */,
 			);
 			path = Shopy;
 			sourceTree = "<group>";
@@ -360,6 +363,7 @@
 				280443472AA109DA00672E4C /* SignUpView.swift in Sources */,
 				28792F0E2A9F4C1A00E0208A /* ShopyApp.swift in Sources */,
 				28792F712A9F658A00E0208A /* Signup.swift in Sources */,
+				280A924C2AA1EE0E00E73FC3 /* ToastView.swift in Sources */,
 				280443452AA108A700672E4C /* SignInView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
