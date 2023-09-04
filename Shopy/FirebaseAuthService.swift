@@ -90,5 +90,80 @@ class FirebaseAuthService {
                 }
             }
         }
+    
+    func saveProduct(
+            productName: String,
+            productType: String,
+            purchasePrice: Double,
+            salePrice: Double,
+            dateAdded: Date,
+            completion: @escaping (Bool, String?) -> Void
+        ) {
+            let db = Firestore.firestore()
+            
+            // Create a new product document with a generated ID
+            if let user = Auth.auth().currentUser {
+                let ref = db.collection("products").addDocument(data: [
+                    "productName": productName,
+                    "productType": productType,
+                    "purchasePrice": purchasePrice,
+                    "salePrice": salePrice,
+                    "dateAdded": dateAdded,
+                    "userId": user.uid // Include the user's UID
+                ]) { error in
+                    if let error = error {
+                        // Handle the error, e.g., display a toast message
+                        completion(false, "Error saving product: \(error.localizedDescription)")
+                    } else {
+                        // Document added successfully, you can display a success message
+                        completion(true, "Product saved successfully")
+                    }
+                }
+            }
+
+            
+        }
+    
+    func fetchProducts(completion: @escaping ([Product]?, Error?) -> Void) {
+            let db = Firestore.firestore()
+            
+            // Get the current user (ensure the user is authenticated)
+            guard let user = Auth.auth().currentUser else {
+                // User is not authenticated, handle accordingly
+                completion(nil, AuthError.notAuthenticated)
+                return
+            }
+
+            // Query the 'products' collection for the current user
+            db.collection("products")
+                .whereField("userId", isEqualTo: user.uid) // Ensure products belong to the current user
+                .getDocuments { (snapshot, error) in
+                    if let error = error {
+                        // Handle the error
+                        completion(nil, error)
+                    } else {
+                        var products = [Product]()
+                        for document in snapshot!.documents {
+                            if let productData = document.data() as? [String: Any],
+                               let productName = productData["productName"] as? String,
+                               let productType = productData["productType"] as? String,
+                               let purchasePrice = productData["purchasePrice"] as? Double,
+                               let salePrice = productData["salePrice"] as? Double,
+                               let dateAddedTimestamp = productData["dateAdded"] as? Timestamp {
+                                
+                                let dateAdded = dateAddedTimestamp.dateValue()
+                                let product = Product(name: productName, type: productType, purchasePrice: purchasePrice, salePrice: salePrice, dateAdded: dateAdded)
+                                
+                                products.append(product)
+                            }
+                        }
+                        completion(products, nil)
+                    }
+                }
+        }
 }
+enum AuthError: Error {
+    case notAuthenticated
+}
+
 
