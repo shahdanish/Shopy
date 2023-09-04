@@ -80,5 +80,15 @@ class FirebaseAuthService {
         
         return validationErrors
     }
+    
+    func signIn(email: String, password: String, completion: @escaping (Bool, String?) -> Void) {
+            Auth.auth().signIn(withEmail: email, password: password) { (authResult, error) in
+                if let error = error {
+                    completion(false, "Error signing in: \(error.localizedDescription)")
+                } else {
+                    completion(true, "User signed in successfully")
+                }
+            }
+        }
 }
 
