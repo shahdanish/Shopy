@@ -120,7 +120,7 @@ struct ProductListView: View {
                 }
                 Spacer()
             }
-            .navigationBarTitle("", displayMode: .inline) // Empty title
+            .navigationBarTitle("Products List", displayMode: .inline) // Empty title
             .navigationBarItems(trailing:
                 NavigationLink(destination: AddProductView(currentView: $currentView)) {
                     Image(systemName: "plus.circle.fill")

@@ -2,6 +2,8 @@ import Foundation
 import Firebase
 import FirebaseFirestore
 import SwiftUI
+import FirebaseStorage
+
 
 class FirebaseAuthService {
     
@@ -92,38 +94,71 @@ class FirebaseAuthService {
         }
     
     func saveProduct(
-            productName: String,
-            productType: String,
-            purchasePrice: Double,
-            salePrice: Double,
-            dateAdded: Date,
-            completion: @escaping (Bool, String?) -> Void
-        ) {
-            let db = Firestore.firestore()
-            
-            // Create a new product document with a generated ID
-            if let user = Auth.auth().currentUser {
-                let ref = db.collection("products").addDocument(data: [
-                    "productName": productName,
-                    "productType": productType,
-                    "purchasePrice": purchasePrice,
-                    "salePrice": salePrice,
-                    "dateAdded": dateAdded,
-                    "userId": user.uid, // Include the user's UID
-                    "isActive" : true
-                ]) { error in
-                    if let error = error {
-                        // Handle the error, e.g., display a toast message
-                        completion(false, "Error saving product: \(error.localizedDescription)")
-                    } else {
-                        // Document added successfully, you can display a success message
-                        completion(true, "Product saved successfully")
+        productName: String,
+        productType: String,
+        purchasePrice: Double,
+        salePrice: Double,
+        dateAdded: Date,
+        image: UIImage,
+        completion: @escaping (Bool, String?) -> Void
+    ) {
+        let db = Firestore.firestore()
+        
+        // Check if a user is authenticated
+        if let user = Auth.auth().currentUser {
+            // Convert UIImage to Data
+            guard let imageData = image.jpegData(compressionQuality: 0.5) else {
+                completion(false, "Failed to convert image to data")
+                return
+            }
+
+            // Create a reference to the Firestore collection where you want to store the product
+            let storageRef = Storage.storage().reference()
+            let imageFileName = UUID().uuidString // Generate a unique filename for the image
+            let imageRef = storageRef.child("product_images/\(imageFileName).jpg")
+
+            // Upload the image data to Firestore
+            imageRef.putData(imageData, metadata: nil) { (_, error) in
+                if let uploadError = error {
+                    completion(false, "Error uploading image: \(uploadError.localizedDescription)")
+                } else {
+                    // Image uploaded successfully, now get the download URL
+                    imageRef.downloadURL { (url, urlError) in
+                        if let urlError = urlError {
+                            completion(false, "Error getting image URL: \(urlError.localizedDescription)")
+                        } else if let imageURL = url {
+                            // User is authenticated, save the product data
+                            let data: [String: Any] = [
+                                "productName": productName,
+                                "productType": productType,
+                                "purchasePrice": purchasePrice,
+                                "salePrice": salePrice,
+                                "dateAdded": dateAdded,
+                                "userId": user.uid, // Include the user's UID
+                                "isActive": true,
+                                "imageURL": imageURL.absoluteString // Store the image URL as a string
+                            ]
+                            
+                            db.collection("products").addDocument(data: data) { documentError in
+                                if let documentError = documentError {
+                                    completion(false, "Error saving product: \(documentError.localizedDescription)")
+                                } else {
+                                    completion(true, "Product saved successfully")
+                                }
+                            }
+                        } else {
+                            completion(false, "Image URL is not available")
+                        }
                     }
                 }
             }
 
-            
+        } else {
+            // User is not authenticated
+            completion(false, "User is not authenticated. Please sign in.")
         }
+    }
+
     func getProductCount(completion: @escaping (Int, Error?) -> Void) {
         let db = Firestore.firestore()
         

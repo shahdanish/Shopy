@@ -62,8 +62,8 @@
             filePath = "Shopy/FirebaseAuthService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "85"
-            endingLineNumber = "85"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
             landmarkName = "signIn(email:password:completion:)"
             landmarkType = "7">
             <Locations>
@@ -110,8 +110,8 @@
             filePath = "Shopy/FirebaseAuthService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "86"
-            endingLineNumber = "86"
+            startingLineNumber = "88"
+            endingLineNumber = "88"
             landmarkName = "signIn(email:password:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -126,8 +126,8 @@
             filePath = "Shopy/FirebaseAuthService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "10"
-            endingLineNumber = "10"
+            startingLineNumber = "12"
+            endingLineNumber = "12"
             landmarkName = "signUp(email:password:completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -136,22 +136,6 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "F79722D2-9BC5-4C12-9C9E-DB33D3FA4996"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Shopy/FirebaseAuthService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "13"
-            endingLineNumber = "13"
-            landmarkName = "signUp(email:password:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "1BE78CB5-3239-4AB6-B6F5-138BCE85C33C"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -167,23 +151,23 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "B916942C-310E-467C-AC3E-0C6E31AAF480"
+            uuid = "1BE78CB5-3239-4AB6-B6F5-138BCE85C33C"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Shopy/FirebaseAuthService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "87"
-            endingLineNumber = "87"
-            landmarkName = "signIn(email:password:completion:)"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "signUp(email:password:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "732BFBFC-E90D-4D48-A181-5B9021E63C74"
+            uuid = "B916942C-310E-467C-AC3E-0C6E31AAF480"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
@@ -199,128 +183,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "3D2C4B00-8BB0-4CD9-9D0E-9CE1D0182F03"
+            uuid = "732BFBFC-E90D-4D48-A181-5B9021E63C74"
             shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Shopy/FirebaseAuthService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "105"
-            endingLineNumber = "105"
-            landmarkName = "saveProduct(productName:productType:purchasePrice:salePrice:dateAdded:completion:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "3D2C4B00-8BB0-4CD9-9D0E-9CE1D0182F03 - a044bf926625f17f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Shopy.FirebaseAuthService.saveProduct(productName: Swift.String, productType: Swift.String, purchasePrice: Swift.Double, salePrice: Swift.Double, dateAdded: Foundation.Date, completion: (Swift.Bool, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Shopy"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/danishfarhaj/xcodelearning/Shopy/Shopy/FirebaseAuthService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "105"
-                  endingLineNumber = "105"
-                  offsetFromSymbolStart = "224">
-               </Location>
-               <Location
-                  uuid = "3D2C4B00-8BB0-4CD9-9D0E-9CE1D0182F03 - a044bf926625f17f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "Shopy.FirebaseAuthService.saveProduct(productName: Swift.String, productType: Swift.String, purchasePrice: Swift.Double, salePrice: Swift.Double, dateAdded: Foundation.Date, completion: (Swift.Bool, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Shopy"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/danishfarhaj/xcodelearning/Shopy/Shopy/FirebaseAuthService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "105"
-                  endingLineNumber = "105"
-                  offsetFromSymbolStart = "320">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "69C3F85A-4140-4B55-803B-7F454DD3FBA7"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Shopy/FirebaseAuthService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "115"
-            endingLineNumber = "115"
-            landmarkName = "saveProduct(productName:productType:purchasePrice:salePrice:dateAdded:completion:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "69C3F85A-4140-4B55-803B-7F454DD3FBA7 - b93bd3e7e0f647b5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Shopy.FirebaseAuthService.saveProduct(productName: Swift.String, productType: Swift.String, purchasePrice: Swift.Double, salePrice: Swift.Double, dateAdded: Foundation.Date, completion: (Swift.Bool, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Shopy"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/danishfarhaj/xcodelearning/Shopy/Shopy/FirebaseAuthService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "114"
-                  endingLineNumber = "114"
-                  offsetFromSymbolStart = "68">
-               </Location>
-               <Location
-                  uuid = "69C3F85A-4140-4B55-803B-7F454DD3FBA7 - b93bd3e7e0f647b5"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Shopy.FirebaseAuthService.saveProduct(productName: Swift.String, productType: Swift.String, purchasePrice: Swift.Double, salePrice: Swift.Double, dateAdded: Foundation.Date, completion: (Swift.Bool, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "Shopy"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/danishfarhaj/xcodelearning/Shopy/Shopy/FirebaseAuthService.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "114"
-                  endingLineNumber = "114"
-                  offsetFromSymbolStart = "64">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "9F52CFEA-59BC-49E8-969E-E6D8E2594CC3"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Shopy/FirebaseAuthService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "119"
-            endingLineNumber = "119"
-            landmarkName = "saveProduct(productName:productType:purchasePrice:salePrice:dateAdded:completion:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "D1D8ACA6-10EF-4377-A308-B15316AE8CCF"
-            shouldBeEnabled = "No"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Shopy/FirebaseAuthService.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "106"
-            endingLineNumber = "106"
-            landmarkName = "saveProduct(productName:productType:purchasePrice:salePrice:dateAdded:completion:)"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
+            landmarkName = "signIn(email:password:completion:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -334,8 +206,8 @@
             filePath = "Shopy/FirebaseAuthService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "154"
-            endingLineNumber = "154"
+            startingLineNumber = "189"
+            endingLineNumber = "189"
             landmarkName = "fetchProducts(completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -350,8 +222,8 @@
             filePath = "Shopy/FirebaseAuthService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "188"
-            endingLineNumber = "188"
+            startingLineNumber = "223"
+            endingLineNumber = "223"
             landmarkName = "fetchProducts(completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -366,8 +238,8 @@
             filePath = "Shopy/FirebaseAuthService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "185"
-            endingLineNumber = "185"
+            startingLineNumber = "220"
+            endingLineNumber = "220"
             landmarkName = "fetchProducts(completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -382,8 +254,8 @@
             filePath = "Shopy/FirebaseAuthService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "6"
-            endingLineNumber = "6"
+            startingLineNumber = "8"
+            endingLineNumber = "8"
             landmarkName = "FirebaseAuthService"
             landmarkType = "3">
          </BreakpointContent>
@@ -398,8 +270,8 @@
             filePath = "Shopy/FirebaseAuthService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "198"
-            endingLineNumber = "198"
+            startingLineNumber = "233"
+            endingLineNumber = "233"
             landmarkName = "inactivateProduct(documentID:completion:)"
             landmarkType = "9">
          </BreakpointContent>
@@ -414,8 +286,8 @@
             filePath = "Shopy/FirebaseAuthService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "183"
-            endingLineNumber = "183"
+            startingLineNumber = "218"
+            endingLineNumber = "218"
             landmarkName = "fetchProducts(completion:)"
             landmarkType = "7">
             <Locations>
@@ -606,8 +478,8 @@
             filePath = "Shopy/FirebaseAuthService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "139"
-            endingLineNumber = "139"
+            startingLineNumber = "174"
+            endingLineNumber = "174"
             landmarkName = "getProductCount(completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -622,8 +494,8 @@
             filePath = "Shopy/FirebaseAuthService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "138"
-            endingLineNumber = "138"
+            startingLineNumber = "173"
+            endingLineNumber = "173"
             landmarkName = "getProductCount(completion:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -638,8 +510,8 @@
             filePath = "Shopy/FirebaseAuthService.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "147"
-            endingLineNumber = "147"
+            startingLineNumber = "182"
+            endingLineNumber = "182"
             landmarkName = "getProductCount(completion:)"
             landmarkType = "7">
             <Locations>
@@ -672,6 +544,150 @@
                   startingLineNumber = "147"
                   endingLineNumber = "147"
                   offsetFromSymbolStart = "248">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D7743479-60E4-4745-95E3-815C58A57CC0"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Shopy/FirebaseAuthService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "97"
+            endingLineNumber = "97"
+            landmarkName = "saveProduct(productName:productType:purchasePrice:salePrice:dateAdded:image:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BDAA1914-B080-4C89-AC35-04259C6884FD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Shopy/FirebaseAuthService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "105"
+            endingLineNumber = "105"
+            landmarkName = "saveProduct(productName:productType:purchasePrice:salePrice:dateAdded:image:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "BE936B02-C2EB-4E2E-915E-EC6535ED469E"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Shopy/FirebaseAuthService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "108"
+            endingLineNumber = "108"
+            landmarkName = "saveProduct(productName:productType:purchasePrice:salePrice:dateAdded:image:completion:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1534F887-833B-4795-9F7C-D282CD37AE37"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Shopy/FirebaseAuthService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "110"
+            endingLineNumber = "110"
+            landmarkName = "saveProduct(productName:productType:purchasePrice:salePrice:dateAdded:image:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "1534F887-833B-4795-9F7C-D282CD37AE37 - 1c6413c1a134e9b3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Shopy.FirebaseAuthService.saveProduct(productName: Swift.String, productType: Swift.String, purchasePrice: Swift.Double, salePrice: Swift.Double, dateAdded: Foundation.Date, image: __C.UIImage, completion: (Swift.Bool, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Shopy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danishfarhaj/xcodelearning/Shopy/Shopy/FirebaseAuthService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "110"
+                  endingLineNumber = "110"
+                  offsetFromSymbolStart = "792">
+               </Location>
+               <Location
+                  uuid = "1534F887-833B-4795-9F7C-D282CD37AE37 - 1c6413c1a134e9b3"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Shopy.FirebaseAuthService.saveProduct(productName: Swift.String, productType: Swift.String, purchasePrice: Swift.Double, salePrice: Swift.Double, dateAdded: Foundation.Date, image: __C.UIImage, completion: (Swift.Bool, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Shopy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danishfarhaj/xcodelearning/Shopy/Shopy/FirebaseAuthService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "110"
+                  endingLineNumber = "110"
+                  offsetFromSymbolStart = "864">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "91C537E7-3B65-4A14-97FB-FAAEB63F1EFD"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Shopy/FirebaseAuthService.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "saveProduct(productName:productType:purchasePrice:salePrice:dateAdded:image:completion:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "91C537E7-3B65-4A14-97FB-FAAEB63F1EFD - 1c6413c1a134ea0e"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Shopy.FirebaseAuthService.saveProduct(productName: Swift.String, productType: Swift.String, purchasePrice: Swift.Double, salePrice: Swift.Double, dateAdded: Foundation.Date, image: __C.UIImage, completion: (Swift.Bool, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Shopy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danishfarhaj/xcodelearning/Shopy/Shopy/FirebaseAuthService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "121"
+                  endingLineNumber = "121"
+                  offsetFromSymbolStart = "1708">
+               </Location>
+               <Location
+                  uuid = "91C537E7-3B65-4A14-97FB-FAAEB63F1EFD - b3ebb2d2fa9432ec"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "closure #1 (Swift.Optional&lt;FirebaseStorage.StorageMetadata&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in Shopy.FirebaseAuthService.saveProduct(productName: Swift.String, productType: Swift.String, purchasePrice: Swift.Double, salePrice: Swift.Double, dateAdded: Foundation.Date, image: __C.UIImage, completion: (Swift.Bool, Swift.Optional&lt;Swift.String&gt;) -&gt; ()) -&gt; ()"
+                  moduleName = "Shopy"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/danishfarhaj/xcodelearning/Shopy/Shopy/FirebaseAuthService.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "122"
+                  endingLineNumber = "122"
+                  offsetFromSymbolStart = "428">
                </Location>
             </Locations>
          </BreakpointContent>

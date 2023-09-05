@@ -7,6 +7,8 @@ struct AddProductView: View {
     @State private var salePrice = ""
     @State private var dateAdded = Date()
     @State private var isShowingDatePicker = false
+    @State private var selectedImage: UIImage? = nil
+    @State private var isShowingImagePicker = false
     @State private var showToast = false
      @State private var toastMessage = ""
     // Inject your FirebaseAuthService instance here
@@ -25,7 +27,18 @@ struct AddProductView: View {
                 TextField("Sale Price", text: $salePrice)
                     .keyboardType(.decimalPad)
             }
-
+            Section(header: Text("Product Image")) {
+                Button("Select Image") {
+                    // Present an image picker to select an image
+                    isShowingImagePicker.toggle()
+                }
+                if let image = selectedImage {
+                    Image(uiImage: image)
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(height: 100)
+                }
+            }
             Section(header: Text("Date Added")) {
                 DatePicker(
                     "Select Date",
@@ -45,30 +58,33 @@ struct AddProductView: View {
                 // Validate and save the product data here
                 // You can use the values from @State variables like productName, productType, etc.
                 if let purchasePriceDouble = Double(purchasePrice),
-                                   let salePriceDouble = Double(salePrice) {
-                                    authService.saveProduct(
-                                        productName: productName,
-                                        productType: productType,
-                                        purchasePrice: purchasePriceDouble,
-                                        salePrice: salePriceDouble,
-                                        dateAdded: Date()
-                                    ) { success, message in
-                                        if success {
-                                            // Product added successfully, show a success toast
-                                            showToast = true
-                                            toastMessage = "Product added successfully"
-                                            self.presentationMode.wrappedValue.dismiss()
-                                        } else {
-                                            // Product addition failed, show an error toast
-                                            showToast = true
-                                            toastMessage = message ?? "An error occurred"
-                                        }
-                                    }
-                                } else {
-                                    // Handle input validation errors here
-                                    showToast = true
-                                    toastMessage = "Invalid input data"
-                                }
+                   let salePriceDouble = Double(salePrice) {
+                    if let image = selectedImage {
+                            authService.saveProduct(
+                            productName: productName,
+                            productType: productType,
+                            purchasePrice: purchasePriceDouble,
+                            salePrice: salePriceDouble,
+                            dateAdded: Date(),
+                            image: image
+                    ) { success, message in
+                        if success {
+                            // Product added successfully, show a success toast
+                            showToast = true
+                            toastMessage = "Product added successfully"
+                            self.presentationMode.wrappedValue.dismiss()
+                        } else {
+                            // Product addition failed, show an error toast
+                            showToast = true
+                            toastMessage = message ?? "An error occurred"
+                        }
+                    }
+                    } else {
+                        // Handle input validation errors here
+                        showToast = true
+                        toastMessage = "Invalid input data"
+                    }
+                }
                 // After saving, you can navigate back to the dashboard or perform other actions.
             }
         )
@@ -82,6 +98,10 @@ struct AddProductView: View {
                 displayedComponents: .date
             )
             .datePickerStyle(.graphical)
+        }
+        .sheet(isPresented: $isShowingImagePicker) {
+           // Basic ImagePicker for selecting an image
+           ImagePicker(image: $selectedImage)
         }
         .showToast(isShowing: $showToast, text: toastMessage, duration: 3)
         //.navigationBarTitle("Sign Up")

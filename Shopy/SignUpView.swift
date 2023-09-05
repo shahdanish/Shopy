@@ -60,7 +60,7 @@ struct SignUpView: View {
         }
         .padding()
         //.showToast(isShowing: $showToast, text: toastMessage, duration: 3)
-        //.navigationBarTitle("Sign Up")
+        .navigationBarTitle("Signup", displayMode: .inline)
         //.navigationBarHidden(true) // Hide the navigation bar
         
     }

@@ -69,6 +69,7 @@ struct SignInView: View {
             //.navigationBarTitle("Sign In")
             //.navigationBarHidden(true) // Hide the navigation bar
         }
+        .navigationBarTitle("Signin", displayMode: .inline)
     }
     private func showToast(message: String, duration: TimeInterval) {
         toastMessage = message

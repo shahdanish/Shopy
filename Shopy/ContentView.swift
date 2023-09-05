@@ -18,7 +18,7 @@ struct ContentView: View {
                 case .addProduct:
                     AddProductView(currentView: $currentView)
                 case .listProduct:
-                    AddProductView(currentView: $currentView)
+                    ProductListView(currentView: $currentView)
                 }
             }
             .navigationBarTitleDisplayMode(.inline)
@@ -125,4 +125,3 @@ struct HomeView: View {
 }
 
 // Other view structures go here, similarly updated with the currentView binding.
-
