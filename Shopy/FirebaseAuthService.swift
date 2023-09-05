@@ -124,6 +124,31 @@ class FirebaseAuthService {
 
             
         }
+    func getProductCount(completion: @escaping (Int, Error?) -> Void) {
+        let db = Firestore.firestore()
+        
+        // Get the current user (ensure the user is authenticated)
+        guard let user = Auth.auth().currentUser else {
+            // User is not authenticated, handle accordingly
+            completion(0, AuthError.notAuthenticated)
+            return
+        }
+        
+        // Query the 'products' collection for the current user and count the documents
+        db.collection("products")
+            .whereField("userId", isEqualTo: user.uid) // Ensure products belong to the current user
+            .whereField("isActive", isEqualTo: true)
+            .getDocuments { (snapshot, error) in
+                if let error = error {
+                    // Handle the error
+                    completion(0, error)
+                } else {
+                    // Get the count of documents in the snapshot
+                    let productCount = snapshot?.documents.count ?? 0
+                    completion(productCount, nil)
+                }
+            }
+    }
     
     func fetchProducts(completion: @escaping ([Product]?, Error?) -> Void) {
             let db = Firestore.firestore()
