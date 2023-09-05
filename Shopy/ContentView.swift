@@ -17,6 +17,8 @@ struct ContentView: View {
                     SignUpView(currentView: $currentView)
                 case .addProduct:
                     AddProductView(currentView: $currentView)
+                case .listProduct:
+                    AddProductView(currentView: $currentView)
                 }
             }
             .navigationBarTitleDisplayMode(.inline)
@@ -75,6 +77,7 @@ enum NavigationViewType {
     case dashboard
     case signUp
     case addProduct
+    case listProduct
 }
 
 struct HomeView: View {
