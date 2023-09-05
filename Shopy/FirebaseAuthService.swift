@@ -82,7 +82,7 @@ class FirebaseAuthService {
     }
     
     func signIn(email: String, password: String, completion: @escaping (Bool, String?) -> Void) {
-            Auth.auth().signIn(withEmail: email, password: password) { (authResult, error) in
+        Auth.auth().signIn(withEmail: email.lowercased(), password: password) { (authResult, error) in
                 if let error = error {
                     completion(false, "Error signing in: \(error.localizedDescription)")
                 } else {
@@ -109,7 +109,8 @@ class FirebaseAuthService {
                     "purchasePrice": purchasePrice,
                     "salePrice": salePrice,
                     "dateAdded": dateAdded,
-                    "userId": user.uid // Include the user's UID
+                    "userId": user.uid, // Include the user's UID
+                    "isActive" : true
                 ]) { error in
                     if let error = error {
                         // Handle the error, e.g., display a toast message
@@ -137,6 +138,7 @@ class FirebaseAuthService {
             // Query the 'products' collection for the current user
             db.collection("products")
                 .whereField("userId", isEqualTo: user.uid) // Ensure products belong to the current user
+                .whereField("isActive", isEqualTo: true)
                 .getDocuments { (snapshot, error) in
                     if let error = error {
                         // Handle the error
@@ -149,10 +151,11 @@ class FirebaseAuthService {
                                let productType = productData["productType"] as? String,
                                let purchasePrice = productData["purchasePrice"] as? Double,
                                let salePrice = productData["salePrice"] as? Double,
+                               let pId = document.documentID as? String,
                                let dateAddedTimestamp = productData["dateAdded"] as? Timestamp {
                                 
                                 let dateAdded = dateAddedTimestamp.dateValue()
-                                let product = Product(name: productName, type: productType, purchasePrice: purchasePrice, salePrice: salePrice, dateAdded: dateAdded)
+                                let product = Product(name: productName, type: productType, purchasePrice: purchasePrice, salePrice: salePrice, dateAdded: dateAdded, pId : pId, isActive : true)
                                 
                                 products.append(product)
                             }
@@ -166,4 +169,18 @@ enum AuthError: Error {
     case notAuthenticated
 }
 
+func inactivateProduct(documentID: String, completion: @escaping (Bool, Error?) -> Void) {
+    let db = Firestore.firestore()
+    let productsRef = db.collection("products").document(documentID)
 
+    // Update the 'isActive' field to false to mark the product as inactive
+    productsRef.updateData([
+        "isActive": false
+    ]) { error in
+        if let error = error {
+            completion(false, error)
+        } else {
+            completion(true, nil)
+        }
+    }
+}

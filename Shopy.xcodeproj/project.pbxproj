@@ -10,7 +10,6 @@
 		280443452AA108A700672E4C /* SignInView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280443442AA108A700672E4C /* SignInView.swift */; };
 		280443472AA109DA00672E4C /* SignUpView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280443462AA109DA00672E4C /* SignUpView.swift */; };
 		280A924C2AA1EE0E00E73FC3 /* ToastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 280A924B2AA1EE0E00E73FC3 /* ToastView.swift */; };
-		280A92502AA20A1600E73FC3 /* Logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 280A924F2AA20A1600E73FC3 /* Logo.png */; };
 		280ABD242AA08D5A0041208E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 280ABD232AA08D5A0041208E /* GoogleService-Info.plist */; };
 		28792F0E2A9F4C1A00E0208A /* ShopyApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28792F0D2A9F4C1A00E0208A /* ShopyApp.swift */; };
 		28792F102A9F4C1A00E0208A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28792F0F2A9F4C1A00E0208A /* ContentView.swift */; };
@@ -73,7 +72,6 @@
 		280443442AA108A700672E4C /* SignInView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInView.swift; sourceTree = "<group>"; };
 		280443462AA109DA00672E4C /* SignUpView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpView.swift; sourceTree = "<group>"; };
 		280A924B2AA1EE0E00E73FC3 /* ToastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastView.swift; sourceTree = "<group>"; };
-		280A924F2AA20A1600E73FC3 /* Logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Logo.png; path = ../../../Desktop/Logo.png; sourceTree = "<group>"; };
 		280ABD232AA08D5A0041208E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		28792F0A2A9F4C1A00E0208A /* Shopy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shopy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		28792F0D2A9F4C1A00E0208A /* ShopyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopyApp.swift; sourceTree = "<group>"; };
@@ -166,7 +164,6 @@
 		28792F0C2A9F4C1A00E0208A /* Shopy */ = {
 			isa = PBXGroup;
 			children = (
-				280A924F2AA20A1600E73FC3 /* Logo.png */,
 				280ABD232AA08D5A0041208E /* GoogleService-Info.plist */,
 				28792F0D2A9F4C1A00E0208A /* ShopyApp.swift */,
 				28792F0F2A9F4C1A00E0208A /* ContentView.swift */,
@@ -345,7 +342,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				28792F152A9F4C1B00E0208A /* Preview Assets.xcassets in Resources */,
-				280A92502AA20A1600E73FC3 /* Logo.png in Resources */,
 				28792F122A9F4C1B00E0208A /* Assets.xcassets in Resources */,
 				280ABD242AA08D5A0041208E /* GoogleService-Info.plist in Resources */,
 			);
@@ -536,10 +532,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Shopy/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = JN22XWH7R5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -566,10 +563,11 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Manual;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Shopy/Preview Content\"";
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = JN22XWH7R5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

@@ -11,6 +11,9 @@ struct AddProductView: View {
      @State private var toastMessage = ""
     // Inject your FirebaseAuthService instance here
     let authService = FirebaseAuthService()
+    // Presentation mode environment variable to dismiss the view
+    @Environment(\.presentationMode) var presentationMode
+    @Binding var currentView: NavigationViewType
 
     var body: some View {
         Form {
@@ -54,6 +57,7 @@ struct AddProductView: View {
                                             // Product added successfully, show a success toast
                                             showToast = true
                                             toastMessage = "Product added successfully"
+                                            self.presentationMode.wrappedValue.dismiss()
                                         } else {
                                             // Product addition failed, show an error toast
                                             showToast = true
@@ -80,12 +84,14 @@ struct AddProductView: View {
             .datePickerStyle(.graphical)
         }
         .showToast(isShowing: $showToast, text: toastMessage, duration: 3)
-
+        //.navigationBarTitle("Sign Up")
+        //.navigationBarHidden(true) // Hide the navigation bar
     }
 }
 
 struct AddProductView_Previews: PreviewProvider {
     static var previews: some View {
-        AddProductView()
+       
+        AddProductView(currentView: .constant(.addProduct))
     }
 }

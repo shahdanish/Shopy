@@ -6,6 +6,8 @@ struct SignUpView: View {
     @State private var password = ""
     @State private var showToast = false
     @State private var toastMessage = ""
+    @Binding var currentView: NavigationViewType // Add binding to control navigation
+
     let authService = FirebaseAuthService()
     
     var body: some View {
@@ -58,7 +60,8 @@ struct SignUpView: View {
         }
         .padding()
         //.showToast(isShowing: $showToast, text: toastMessage, duration: 3)
-        
+        //.navigationBarTitle("Sign Up")
+        //.navigationBarHidden(true) // Hide the navigation bar
         
     }
     private func showToast(message: String, duration: TimeInterval) {
@@ -77,6 +80,6 @@ struct SignUpView: View {
 
 struct SignUpView_Previews: PreviewProvider {
     static var previews: some View {
-        SignUpView()
+        SignUpView(currentView: .constant(.signUp)) // Pass the new enum case here
     }
 }

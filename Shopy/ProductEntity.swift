@@ -7,4 +7,6 @@ struct Product: Identifiable {
     let purchasePrice: Double
     let salePrice: Double
     let dateAdded: Date
+    let pId : String
+    let isActive : Bool
 }
