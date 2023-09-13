@@ -13,21 +13,13 @@ struct SignInView: View {
     
     var body: some View {
         
-        ZStack{
+        ZStack {
             Color(
                 red: Double(0xFF) / 255.0,
                 green: Double(0xFC) / 255.0,
                 blue: Double(0xF2) / 255.0
             ).edgesIgnoringSafeArea(.all)
-            if showToast {
-                Text(toastMessage)
-                    .padding()
-                    .background(Color.black)
-                    .foregroundColor(Color.white)
-                    .cornerRadius(10)
-                    .transition(.slide)
-                    .showToast(isShowing: $showToast, text: toastMessage, duration: 3)
-            }
+           
             VStack {
                 Image("logo")
                     .resizable()
@@ -76,25 +68,26 @@ struct SignInView: View {
                     .textFieldStyle(PlainTextFieldStyle())
                 
                 HStack {
-                       Toggle("", isOn: $isKeepMeSignedIn)
-                           .toggleStyle(SwitchToggleStyle(tint: Color.blue))
-                           .foregroundColor(Color(red: 0, green: 0, blue: 0))
-                           .padding(.horizontal)
-                       
-                       Text("Keep me signed in")
-                           .font(.system(size: 14))
-                           .foregroundColor(Color(red: 0, green: 0, blue: 0))
-                        Button(action: {
-                            // Add action for "Forgot password?"
-                            // You can implement this logic
-                        }) {
-                            Text("Forgot password?")
-                                .foregroundColor(Color(red: 0, green: 0, blue: 0))
-                        }
-                   }
-                   .frame(maxWidth: .infinity, alignment: .leading) // Align the HStack's content to the leading edge (left)
-                   .padding(.horizontal)
-                
+                    Toggle("", isOn: $isKeepMeSignedIn)
+                        .toggleStyle(SwitchToggleStyle(tint: Color.blue))
+                        .foregroundColor(Color(red: 0, green: 0, blue: 0))
+                        .padding(.horizontal)
+                    
+                    Text("Keep me signed in")
+                        .font(.system(size: 14))
+                        .foregroundColor(Color(red: 0, green: 0, blue: 0))
+                        .frame(maxWidth: .infinity, alignment: .leading) // Align the text to the left
+                    
+                    Button(action: {
+                        // Add action for "Forgot password?"
+                        // You can implement this logic
+                    }) {
+                        Text("Forgot password?")
+                            .foregroundColor(Color(red: 0, green: 0, blue: 0))
+                            .frame(maxWidth: .infinity, alignment: .leading) // Align the text to the left
+                    }
+                }
+                .padding(.horizontal)
                 
                 Button(action: {
                     authService.signIn(email: self.email, password: self.password) { success, message in
@@ -124,13 +117,38 @@ struct SignInView: View {
                     .foregroundColor(Color(red: 0, green: 0, blue: 0))
                 
                 NavigationLink(destination: SignUpView(currentView: $currentView)) {
-                    Text("Sign Up Now") // "Sign Up Now" button
-                        .font(.system(size: 14))
-                        .foregroundColor(Color.blue)
+                    Text("Sign Up Now")
+                        .font(Font.custom("Abhaya Libre Medium", size: 16))
+                        .multilineTextAlignment(.center)
+                        .foregroundColor(.black)
+                        .frame(width: 343, height: 48)
+                        .overlay(
+                            Rectangle()
+                                .inset(by: 0.5)
+                                .stroke(Color.black, lineWidth: 1)
+                        )
                 }
+                
+                
                 .padding(.bottom, 20)
             }
+            .overlay(
+                GeometryReader { geometry in
+                    if showToast {
+                        Text(toastMessage)
+                            .padding()
+                            .background(Color.black)
+                            .foregroundColor(Color.white)
+                            .cornerRadius(10)
+                            .transition(.slide)
+                            .offset(x: 0, y: 0) // Adjust the Y offset as needed
+                            .zIndex(1) // Bring the toast message to the front
+                            .showToast(isShowing: $showToast, text: toastMessage, duration: 3)
+                    }
+                }
+            )
         }
+        
         //.padding()
         //.showToast(isShowing: $showToast, text: toastMessage, duration: 3)
         .background(

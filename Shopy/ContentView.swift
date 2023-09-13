@@ -7,10 +7,11 @@ struct ContentView: View {
         ZStack{
             Color(.blue).ignoresSafeArea()
             NavigationView {
-                VStack {
+                HStack {
                     switch currentView {
                     case .home:
                         HomeView(currentView: $currentView)
+                            .navigationBarBackButtonHidden(true)
                     case .signIn:
                         SignInView(currentView: $currentView)
                     case .dashboard:
@@ -86,50 +87,38 @@ enum NavigationViewType {
 
 struct HomeView: View {
     @Binding var currentView: NavigationViewType
-    
-    var body: some View {
-        ZStack {
-            Color(
-                red: Double(0xFF) / 255.0,
-                green: Double(0xFC) / 255.0,
-                blue: Double(0xF2) / 255.0
-            )
-                .edgesIgnoringSafeArea(.all)
-            
-            VStack {
-                Image("logo") // Replace "ShopyLogo" with your logo image asset name
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 200, height: 200)
-                    .padding(.bottom, 20)
-                
-                NavigationLink(destination: SignInView(currentView: $currentView)) {
-                    Text("Sign In")
-                        .font(.title)
-                        .foregroundColor(.white)
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .background(Color.blue)
-                        .cornerRadius(10)
+    @State private var showSignInView = false
+
+        var body: some View {
+            NavigationView {
+                ZStack {
+                    // Splash screen with logo
+                    Image("logo")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                        .frame(width: 200, height: 200)
+                        .padding(.bottom, 20)
+                        .onAppear {
+                            // Use Timer to navigate to SignInView after 4 seconds
+                            Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { _ in
+                                showSignInView = true
+                            }
+                        }
+                        .opacity(showSignInView ? 0 : 1) // Show the logo for 4 seconds
+
+                    // NavigationLink to SignInView
+                    NavigationLink("", destination: SignInView(currentView: $currentView)
+                                        .navigationBarBackButtonHidden(true), isActive: $showSignInView)
+                                        .opacity(0) // Hide the NavigationLink visually
+
+
+                    // Additional content (if any) for SignInView can be added here
                 }
-                .padding(.horizontal, 20)
-                
-                NavigationLink(destination: SignUpView(currentView: $currentView)) {
-                    Text("Create Account")
-                        .font(.title)
-                        .foregroundColor(.white)
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .background(Color.green)
-                        .cornerRadius(10)
-                }
-                .padding(.horizontal, 20)
+                .navigationBarTitle("", displayMode: .inline)
+                .navigationBarHidden(true) // Hide the navigation bar
             }
-            .padding(.vertical, 20)
         }
-        //.navigationBarTitle("Homepage")
-        //.navigationBarHidden(true) // Hide the navigation bar
-    }
+
 }
 
 // Other view structures go here, similarly updated with the currentView binding.
