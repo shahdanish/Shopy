@@ -211,11 +211,12 @@ class FirebaseAuthService {
                                let productType = productData["productType"] as? String,
                                let purchasePrice = productData["purchasePrice"] as? Double,
                                let salePrice = productData["salePrice"] as? Double,
+                               let imageURL = productData["imageURL"] as? String,
                                let pId = document.documentID as? String,
                                let dateAddedTimestamp = productData["dateAdded"] as? Timestamp {
                                 
                                 let dateAdded = dateAddedTimestamp.dateValue()
-                                let product = Product(name: productName, type: productType, purchasePrice: purchasePrice, salePrice: salePrice, dateAdded: dateAdded, pId : pId, isActive : true)
+                                let product = Product(name: productName, type: productType, purchasePrice: purchasePrice, salePrice: salePrice, dateAdded: dateAdded, pId : pId, isActive : true, imageURL : imageURL)
                                 
                                 products.append(product)
                             }

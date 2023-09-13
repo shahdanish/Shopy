@@ -4,28 +4,32 @@ struct ContentView: View {
     @State private var currentView: NavigationViewType = .home
     
     var body: some View {
-        NavigationView {
-            VStack {
-                switch currentView {
-                case .home:
-                    HomeView(currentView: $currentView)
-                case .signIn:
-                    SignInView(currentView: $currentView)
-                case .dashboard:
-                    DashboardView(currentView: $currentView)
-                case .signUp:
-                    SignUpView(currentView: $currentView)
-                case .addProduct:
-                    AddProductView(currentView: $currentView)
-                case .listProduct:
-                    ProductListView(currentView: $currentView)
+        ZStack{
+            Color(.blue).ignoresSafeArea()
+            NavigationView {
+                VStack {
+                    switch currentView {
+                    case .home:
+                        HomeView(currentView: $currentView)
+                    case .signIn:
+                        SignInView(currentView: $currentView)
+                    case .dashboard:
+                        DashboardView(currentView: $currentView)
+                    case .signUp:
+                        SignUpView(currentView: $currentView)
+                    case .addProduct:
+                        AddProductView(currentView: $currentView)
+                    case .listProduct:
+                        ProductListView(currentView: $currentView)
+                    }
                 }
+                .navigationBarTitleDisplayMode(.inline)
+                .navigationBarItems(
+                    trailing: BreadcrumbNavigationView(currentView: $currentView)
+                )
             }
-            .navigationBarTitleDisplayMode(.inline)
-            .navigationBarItems(
-                trailing: BreadcrumbNavigationView(currentView: $currentView)
-            )
         }
+        
     }
 }
 
@@ -37,7 +41,7 @@ struct BreadcrumbNavigationView: View {
             Button(action: {
                 currentView = .home
             }) {
-                Text("Homepage")
+                Text("")
             }
             .opacity(currentView == .home ? 0.5 : 1.0)
             
@@ -85,7 +89,11 @@ struct HomeView: View {
     
     var body: some View {
         ZStack {
-            Color(UIColor.systemBackground)
+            Color(
+                red: Double(0xFF) / 255.0,
+                green: Double(0xFC) / 255.0,
+                blue: Double(0xF2) / 255.0
+            )
                 .edgesIgnoringSafeArea(.all)
             
             VStack {

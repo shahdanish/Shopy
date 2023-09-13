@@ -9,4 +9,5 @@ struct Product: Identifiable {
     let dateAdded: Date
     let pId : String
     let isActive : Bool
+    let imageURL : String
 }

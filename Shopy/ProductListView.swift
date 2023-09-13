@@ -53,6 +53,17 @@ struct ProductListView: View {
                     List(filteredProducts) { product in
                         // Display product information here
                         VStack(alignment: .leading) {
+                            if let url = URL(string: product.imageURL) {
+                                    AsyncImage(url: url) { image in
+                                        image
+                                            .resizable()
+                                            .aspectRatio(contentMode: .fit)
+                                            .frame(width: 200, height: 200) // Adjust the frame size as needed
+                                    } placeholder: {
+                                        // Placeholder view (e.g., loading indicator)
+                                        ProgressView()
+                                    }
+                                }
                             Text(product.name)
                                 .font(.headline)
                             Text(product.type)
