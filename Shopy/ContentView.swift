@@ -24,55 +24,10 @@ struct ContentView: View {
                         ProductListView(currentView: $currentView)
                     }
                 }
-                .navigationBarTitleDisplayMode(.inline)
-                .navigationBarItems(
-                    trailing: BreadcrumbNavigationView(currentView: $currentView)
-                )
+                .navigationBarHidden(true) // Hide the navigation bar
             }
         }
         
-    }
-}
-
-struct BreadcrumbNavigationView: View {
-    @Binding var currentView: NavigationViewType
-    
-    var body: some View {
-        HStack {
-            Button(action: {
-                currentView = .home
-            }) {
-                Text("")
-            }
-            .opacity(currentView == .home ? 0.5 : 1.0)
-            
-            if currentView != .home {
-                Spacer()
-                Image(systemName: "chevron.right")
-                Spacer()
-                
-                Button(action: {
-                    currentView = .signIn
-                }) {
-                    Text("SignIn")
-                }
-                .opacity(currentView == .signIn ? 0.5 : 1.0)
-            }
-            
-            if currentView == .dashboard {
-                Spacer()
-                Image(systemName: "chevron.right")
-                Spacer()
-                
-                Button(action: {
-                    // You can add actions for further breadcrumbs here
-                }) {
-                    Text("Dashboard")
-                }
-                .opacity(currentView == .dashboard ? 0.5 : 1.0)
-            }
-        }
-        .foregroundColor(.blue)
     }
 }
 
@@ -88,6 +43,28 @@ enum NavigationViewType {
 struct HomeView: View {
     @Binding var currentView: NavigationViewType
     @State private var showSignInView = false
+    let authService = FirebaseAuthService()
+    init(currentView: Binding<NavigationViewType>) {
+        _currentView = currentView
+
+        // Check for stored credentials
+        if UserDefaults.standard.bool(forKey: "keepMeSignedIn"),
+           let storedEmail = UserDefaults.standard.string(forKey: "storedEmail"),
+           let storedPassword = UserDefaults.standard.string(forKey: "storedPassword") {
+            // Automatically sign in the user using stored credentials
+            authService.signIn(email: storedEmail, password: storedPassword, keepMeSignedIn: true) { success, message in
+                if success {
+                    currentView.wrappedValue = .dashboard
+                }
+            }
+        } else {
+            // Use Timer to navigate to SignInView after 2 seconds
+            Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { _ in
+                currentView.wrappedValue = .signIn
+            }
+        }
+    }
+
 
         var body: some View {
             NavigationView {
@@ -98,19 +75,12 @@ struct HomeView: View {
                         .aspectRatio(contentMode: .fit)
                         .frame(width: 200, height: 200)
                         .padding(.bottom, 20)
-                        .onAppear {
-                            // Use Timer to navigate to SignInView after 4 seconds
-                            Timer.scheduledTimer(withTimeInterval: 2, repeats: false) { _ in
-                                showSignInView = true
-                            }
-                        }
-                        .opacity(showSignInView ? 0 : 1) // Show the logo for 4 seconds
+                        .opacity(showSignInView ? 0 : 1) // Show the logo for 2 seconds
 
                     // NavigationLink to SignInView
                     NavigationLink("", destination: SignInView(currentView: $currentView)
                                         .navigationBarBackButtonHidden(true), isActive: $showSignInView)
                                         .opacity(0) // Hide the NavigationLink visually
-
 
                     // Additional content (if any) for SignInView can be added here
                 }

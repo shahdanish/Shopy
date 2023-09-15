@@ -45,7 +45,7 @@ struct SignInView: View {
                         RoundedRectangle(cornerRadius: 0)
                             .stroke(Color("YourBorderColor"), lineWidth: 1)
                     )
-                    .foregroundColor(Color("YourTextColor"))
+                    .foregroundColor(Color(red: 0, green: 0, blue: 0))
                     .font(.system(size: 16))
                     .padding(.horizontal)
                     .textFieldStyle(PlainTextFieldStyle())
@@ -62,7 +62,7 @@ struct SignInView: View {
                         RoundedRectangle(cornerRadius: 0)
                             .stroke(Color("YourBorderColor"), lineWidth: 1)
                     )
-                    .foregroundColor(Color("YourTextColor"))
+                    .foregroundColor(Color(red: 0, green: 0, blue: 0))
                     .font(.system(size: 16))
                     .padding(.horizontal)
                     .textFieldStyle(PlainTextFieldStyle())
@@ -90,7 +90,7 @@ struct SignInView: View {
                 .padding(.horizontal)
                 
                 Button(action: {
-                    authService.signIn(email: self.email, password: self.password) { success, message in
+                    authService.signIn(email: self.email, password: self.password, keepMeSignedIn: self.isKeepMeSignedIn) { success, message in
                         if success {
                             // Redirect to the dashboard page
                             //redirectToDashboard = true

@@ -83,15 +83,28 @@ class FirebaseAuthService {
         return validationErrors
     }
     
-    func signIn(email: String, password: String, completion: @escaping (Bool, String?) -> Void) {
+    func signIn(email: String, password: String, keepMeSignedIn: Bool, completion: @escaping (Bool, String?) -> Void) {
         Auth.auth().signIn(withEmail: email.lowercased(), password: password) { (authResult, error) in
-                if let error = error {
-                    completion(false, "Error signing in: \(error.localizedDescription)")
-                } else {
-                    completion(true, "User signed in successfully")
+            if let error = error {
+                completion(false, "Error signing in: \(error.localizedDescription)")
+            } else {
+                if keepMeSignedIn {
+                    // Check if UserDefaults settings don't already exist
+                    if UserDefaults.standard.string(forKey: "storedEmail") == nil &&
+                       UserDefaults.standard.string(forKey: "storedPassword") == nil &&
+                       UserDefaults.standard.bool(forKey: "keepMeSignedIn") == nil {
+
+                        // Store the user's credentials in UserDefaults
+                        UserDefaults.standard.set(email, forKey: "storedEmail")
+                        UserDefaults.standard.set(password, forKey: "storedPassword")
+                        UserDefaults.standard.set(true, forKey: "keepMeSignedIn")
+                    }
                 }
+                completion(true, "User signed in successfully")
             }
         }
+    }
+
     
     func saveProduct(
         productName: String,
